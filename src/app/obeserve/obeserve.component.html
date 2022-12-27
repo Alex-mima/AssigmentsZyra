@@ -1,1 +1,13 @@
 <p>obeserve works!</p>
+<!-- An observable can be thought as a data source, it is basically an object we import from a third party package(rxjs),
+        (1) there is a pattern to observable where there is the observable and the observer 
+                in the middle there is a stream(a timeline) and on this timeline we can have multiple events(or data packages) emited by the observable depending on the data source of that observable
+         the observable can emit data because you trigger it to do so(you can do that programmaticaly), it can be connected to a button click, when the button is clicked an event(a data pacakge) is emitted automaticlly
+        or it can be connected to a http request so when the response returns, the response is emited as a data package. 
+
+        (2)the other side is the observer which is your code (.subscribe). There ,there is three ways to handle data packages, you can handle the normal data, errors or the completion of the observable.
+                these are the 3 main types of data that you can recieve, and in these hooks(boxes) your code gets executed
+        
+        (3)you use it to handle asynchronous tasks, because all these data sources te mesiperm are async , you dont know when they will happen and you dont know how long they are going to take
+
+        (4) a big advantage to observables are their operators  -->
