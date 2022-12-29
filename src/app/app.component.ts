@@ -1,3 +1,4 @@
+import { NgForm } from '@angular/forms';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BigUdemy';
+
+  onSubmit(form: NgForm) {
+    console.log(NgForm);
+  }
 }
