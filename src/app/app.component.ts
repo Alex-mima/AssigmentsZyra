@@ -8,6 +8,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+angular-forms
   @ViewChild('p') signupForm: NgForm;
   user = {
     username: '',
@@ -32,4 +33,7 @@ export class AppComponent {
   onSubmit(form: NgForm) {
     this.user.username = this.signupForm.value.userData.username;
   }
+
+  title = 'BigUdemy';
+ main
 }
