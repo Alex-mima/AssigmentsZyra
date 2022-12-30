@@ -1,9 +1,8 @@
-import { NgForm } from '@angular/forms';
-<<<<<<< HEAD
+
+import { NgFor } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
-=======
-import { Component } from '@angular/core';
->>>>>>> 255f3ed0d2826000591a6d84c937cea338fcd853
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
@@ -11,14 +10,33 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  @ViewChild('f') signupForm: NgForm;
-  title = 'BigUdemy';
 
-<<<<<<< HEAD
-  onSubmit() {}
-=======
-  onSubmit(form: NgForm) {
-    console.log(NgForm);
+  @ViewChild('p') signupForm: NgForm;
+  user = {
+    username: '',
+    email: '',
+    secretQuestion: '',
+    answer: '',
+    gender: '',
+  };
+  answer = '';
+  genders = ['male', 'female'];
+  defaultQuestion = 'teacher';
+
+  suggestUserName() {
+    const suggestedName = 'Superuser';
+    // this.signupForm.form.patchValue({
+    //   userData: {
+    //     username: suggestedName,
+    //   },
+    // });
   }
->>>>>>> 255f3ed0d2826000591a6d84c937cea338fcd853
+
+  onSubmit(form: NgForm) {
+    this.user.username = this.signupForm.value.userData.username;
+  }
+
+  title = 'BigUdemy';
+ main
+
 }
