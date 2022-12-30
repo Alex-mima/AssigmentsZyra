@@ -1,6 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+
       <form (ngSubmit)="onSubmit(p)" #p="ngForm">
         <div id="user-data" ngModelGroup="userData" #userData="ngModelGroup">
           <div class="form-group">
@@ -79,6 +80,7 @@
         <p>Answer:</p>
         <p>Gender:</p>
       </div>
+
     </div>
   </div>
 </div>

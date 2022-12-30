@@ -1,6 +1,8 @@
+
 import { NgFor } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
@@ -8,7 +10,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-angular-forms
+
   @ViewChild('p') signupForm: NgForm;
   user = {
     username: '',
@@ -36,4 +38,5 @@ angular-forms
 
   title = 'BigUdemy';
  main
+
 }
